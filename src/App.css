@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap');
+
+*{
+	font-family: 'Bricolage Grotesque';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 2rem;
+	transition: .3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'Ranade';
+    src: url('./fonts/Ranade-Regular.otf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    color: #020202;
+	background: #F8F7F3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+    flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+	list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    text-decoration: none;
+    color: #020202;
+}
+
+a:hover {
+    color: #FEB244;
+}
+
+img{
+	width: 100%;
+}
+
+section{
+	padding: 3rem 0 2rem;
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+	width: 100%;
+}
+
+header {
+    padding: 32px 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+}
+
+header img {
+    width: 40px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 50px;
+}
+
+.hero h1 {
+    font-size: 220px;
+    line-height: 180px;
+}
+
+.hero img {
+    margin-top: -100px;
+}
+
+.hero p {
+    text-align: right;
+    margin: 20px 0;
+}
+
+@media (max-width: 1100px){
+    .container{
+		margin: 0 auto;
+		width: 90%;
+	}
 }
