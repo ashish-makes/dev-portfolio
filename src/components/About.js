@@ -1,5 +1,17 @@
 import React from 'react'
-import aboutImg from '../images/about-img.png';
+import htmlLogo from '../images/html.png';
+import cssLogo from '../images/css.png';
+import jsLogo from '../images/js.png';
+import pythonLogo from '../images/python.png';
+import djangoLogo from '../images/django.png';
+import gitLogo from '../images/git.png';
+import githubLogo from '../images/github.png';
+import reactLogo from '../images/react.png';
+import mysqlLogo from '../images/mysql.png';
+import tailwindLogo from '../images/tailwind-css.png';
+import phpLogo from '../images/php.png';
+import bootstarpLogo from '../images/bootstrap.png';
+
 
 export default function About() {
     return (
@@ -17,6 +29,80 @@ export default function About() {
                         </svg>
                     </span>
                 </a>
+            </div><br />
+            <p>Hi,
+
+                My name is Ashish and I am a highly motivated and experienced developer with a passion for creating innovative solutions for the internet.<br /><br />
+
+                After completing my schooling in 2021, I have chosen to further my education in Computer Science while concurrently taking on freelance projects and blogging to expand my skillset. I possess a diverse range of technical knowledge and experience, including proficiency in programming languages such as Python, HTML, CSS, Javascript and SQL, as well as experience with frameworks such as Tailwind CSS and Django.<br /><br />
+
+                I have applied these skills to develop a number of successful real-world applications such as a Skillmate - An eLearning Platform, Toolify - A All in One Online Tools Website, PyShield - Antivirus Application, Full-Stack Blog Website and counting. You can explore more about my projects on portfolio page.<br /><br />
+
+                I am continuously seeking new opportunities to expand my knowledge and improve my abilities as a developer, in order to assist clients in achieving their project goals.</p><br />
+
+            <h2>my tech stack</h2>
+
+            <div className='tech-stack'>
+                <div className='tech'>
+                    <img style={{width: '80px'}} src= {htmlLogo} alt="html" />
+                        <p><b>HTML 5</b></p>
+                        <p>Advanced</p>
+                </div>
+                <div className='tech'>
+                    <img src= {cssLogo} alt="css" />
+                        <p><b>CSS 3</b></p>
+                        <p>Advanced</p>
+                </div>
+                <div className='tech'>
+                    <img src= {jsLogo} alt="javascript" />
+                        <p><b>JavaScript</b></p>
+                        <p>Intermediate</p>
+                </div>
+                <div className='tech'>
+                    <img src= {reactLogo} alt="react" />
+                        <p><b>React</b></p>
+                        <p>Intermediate</p>
+                </div>
+                <div className='tech'>
+                    <img src= {tailwindLogo} alt="tailwind" />
+                        <p><b>Tailwind CSS</b></p>
+                        <p>Advanced</p>
+                </div>
+                <div className='tech'>
+                    <img src= {bootstarpLogo} alt="bootstrap" />
+                        <p><b>Bootstrap</b></p>
+                        <p>Advanced</p>
+                </div>
+                <div className='tech'>
+                    <img src= {phpLogo} alt="php" />
+                        <p><b>PHP</b></p>
+                        <p>Intermediate</p>
+                </div>
+                <div className='tech'>
+                    <img src= {pythonLogo} alt="python" />
+                        <p><b>Python</b></p>
+                        <p>Intermediate</p>
+                </div>
+                <div className='tech'>
+                    <img src= {djangoLogo} alt="django" />
+                        <p><b>Django</b></p>
+                        <p>Intermediate</p>
+                </div>
+                <div className='tech'>
+                    <img src= {mysqlLogo} alt="mysql" />
+                        <p><b>MySQL</b></p>
+                        <p>Intermediate</p>
+                </div>
+                <div className='tech'>
+                    <img src= {gitLogo} alt="git" />
+                        <p><b>Git</b></p>
+                        <p>Intermediate</p>
+                </div>
+                <div className='tech'>
+                    <img src= {githubLogo} alt="github" />
+                        <p><b>GitHub</b></p>
+                        <p>Intermediate</p>
+                </div>
             </div>
         </div>
     )

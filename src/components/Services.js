@@ -6,11 +6,11 @@ import othersImg from '../images/other-services.png';
 
 export default function Services() {
     return (
-        <div className='container'>
+        <div className='services container'>
 
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <h1 style={{ fontSize: '60px' }}>we can work together.</h1>
-                <a style={{ float: 'right', }} href='https://github.com/ashish-makes' target='_blank' className="hover-effect btn">
+                <a style={{ float: 'right', }} href='https://www.fiverr.com/creative_ashish' target='_blank' className="hover-effect btn">
                     <span style={{ display: 'flex', alignItems: 'center' }}>
                         <p style={{ color: '#fff' }}>see all services</p>
                         <svg

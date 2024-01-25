@@ -1,11 +1,10 @@
 import heroImg from '../images/hero-bg.png';
-import aboutImg from '../images/about-img.png';
 import React from 'react'
 
 export default function Hero() {
     return (
         <>
-            <section className='container hero'>
+            <div className='container hero'>
                 <div>
                     <h1 style={{ color: '#feb244' }}>hello</h1>
                     <h1><i>world</i><span style={{ color: '#feb244' }}>.</span></h1>
@@ -14,7 +13,7 @@ export default function Hero() {
                 <div>
                     <img src={heroImg} />
                 </div>
-            </section>
+            </div>
         </>
     )
 }
