@@ -197,6 +197,11 @@ header img {
     color: #fff;
 }
 
+.included {
+    display: flex;
+    
+}
+
 @media (max-width: 1100px){
     .container{
 		margin: 0 auto;
