@@ -1,16 +1,16 @@
 import React from 'react'
-import htmlLogo from '../images/html.png';
-import cssLogo from '../images/css.png';
-import jsLogo from '../images/js.png';
-import pythonLogo from '../images/python.png';
-import djangoLogo from '../images/django.png';
-import gitLogo from '../images/git.png';
-import githubLogo from '../images/github.png';
-import reactLogo from '../images/react.png';
-import mysqlLogo from '../images/mysql.png';
-import tailwindLogo from '../images/tailwind-css.png';
-import phpLogo from '../images/php.png';
-import bootstarpLogo from '../images/bootstrap.png';
+import htmlLogo from '../images/html.webp';
+import cssLogo from '../images/css.webp';
+import jsLogo from '../images/js.webp';
+import pythonLogo from '../images/python.webp';
+import djangoLogo from '../images/django.webp';
+import gitLogo from '../images/git.webp';
+import githubLogo from '../images/github.webp';
+import reactLogo from '../images/react.webp';
+import mysqlLogo from '../images/mysql.webp';
+import tailwindLogo from '../images/tailwind-css.webp';
+import phpLogo from '../images/php.webp';
+import bootstarpLogo from '../images/bootstrap.webp';
 
 
 export default function About() {

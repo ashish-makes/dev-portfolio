@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import lmsImg from '../images/django-lms.png';
-import toolsImg from '../images/django-tools-website.png';
-import pblogImg from '../images/django-personal-blog-app.png';
-import djbImg from '../images/django-tailwind-blog.png';
-import webaImg from '../images/web-design-agency.png';
-import candywebImg from '../images/candy-landing-page.png';
+import lmsImg from '../images/django-lms.webp';
+import toolsImg from '../images/django-tools-website.webp';
+import pblogImg from '../images/django-personal-blog-app.webp';
+import djbImg from '../images/django-tailwind-blog.webp';
+import webaImg from '../images/web-design-agency.webp';
+import candywebImg from '../images/candy-landing-page.webp';
 
 export default function Portfolio() {
 
@@ -27,7 +26,7 @@ export default function Portfolio() {
 
             <div className='projects'>
                 <div className='project'>
-                    <img src={lmsImg} />
+                    <img src={lmsImg} alt='django-lms' />
                     <div style={{ padding: '20px' }}>
                         <h2>Skillmate - An eLearning Platform</h2>
                         <p style={{ margin: '10px 0' }}>Skillmate is an online learning platform that allows instructors to create and sell courses to students.</p>
@@ -58,7 +57,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className='project'>
-                    <img src={toolsImg} />
+                    <img src={toolsImg} alt='django-tools-web' />
                     <div style={{ padding: '20px' }}>
                         <h2>Toolify - A All in One Tools Website</h2>
                         <p style={{ margin: '10px 0' }}>Toolify is a webapp built with django that offers a collection of various web development tools and resources.</p>
@@ -89,7 +88,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className='project'>
-                    <img src={pblogImg} />
+                    <img src={pblogImg} alt='django-blog' />
                     <div style={{ padding: '20px' }}>
                         <h2>Django Blog - A Personal Portfolio & Blog</h2>
                         <p style={{ margin: '10px 0' }}>A Personal Blog and portfolio website built using Django and with all the necesarry pages such as Projects, Blog and more.</p>
@@ -120,7 +119,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className='project'>
-                    <img src={djbImg} />
+                    <img src={djbImg} alt='django-tailwind-blog' />
                     <div style={{ padding: '20px' }}>
                         <h2>Django Tailwind Blog - A Developer Portfolio & Blog</h2>
                         <p style={{ margin: '10px 0' }}>Django Tailwind Blog is a developer blog and portfolio website built using Django and Tailwind CSS.</p>
@@ -151,7 +150,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className='project'>
-                    <img src={webaImg} />
+                    <img src={webaImg} alt='web-dev-agency' />
                     <div style={{ padding: '20px' }}>
                         <h2>Blackcode - Web Development Services Agency Website</h2>
                         <p style={{ margin: '10px 0' }}>Web Development Services Agency Landing Page is a professional website showcasing tailored web development services and expertise.</p>
@@ -182,7 +181,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className='project'>
-                    <img src={candywebImg} />
+                    <img src={candywebImg} alt='candy-web' />
                     <div style={{ padding: '20px' }}>
                         <h2>Pulse Candy - Candy Selling Website Landing Page</h2>
                         <p style={{ margin: '10px 0' }}>A candy selling landing page including all the popular candies and some info adbotu each candy with the links to buy them online</p>

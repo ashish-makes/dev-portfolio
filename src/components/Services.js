@@ -1,8 +1,8 @@
 import React from 'react'
 
-import landImg from '../images/landing-page-skeleton.png';
-import fsImg from '../images/full-stack.png';
-import othersImg from '../images/other-services.png';
+import landImg from '../images/landing-page-skeleton.webp';
+import fsImg from '../images/full-stack.webp';
+import othersImg from '../images/other-services.webp';
 
 export default function Services() {
     return (
@@ -25,7 +25,7 @@ export default function Services() {
 
             <div className='projects'>
                 <div className='project'>
-                    <img src={landImg} />
+                    <img src={landImg} alt='landing-page' />
                     <div style={{ padding: '20px' }}>
                         <h2>Landing Page Development</h2>
                         <p style={{ margin: '10px 0' }}>I will develop a good UI/UX landing page that stands out and showcase your business.</p>
@@ -68,7 +68,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className='project'>
-                    <img src={fsImg} />
+                    <img src={fsImg} alt='full-stack-app' />
                     <div style={{ padding: '20px' }}>
                         <h2>Full Stack Development</h2>
                         <p style={{ margin: '10px 0' }}>I will develop a full-stack website including all the necessary pages.</p>
@@ -111,7 +111,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className='project'>
-                    <img src={othersImg} />
+                    <img src={othersImg} alt='other-services' />
                     <div style={{ padding: '20px' }}>
                         <h2>Other Services</h2>
                         <p style={{ margin: '10px 0' }}>I also offers the services mentioned below apart from web development.</p>
