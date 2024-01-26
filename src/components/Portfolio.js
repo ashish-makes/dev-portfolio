@@ -32,7 +32,7 @@ export default function Portfolio() {
                         <h2>Skillmate - An eLearning Platform</h2>
                         <p style={{ margin: '10px 0' }}>Skillmate is an online learning platform that allows instructors to create and sell courses to students.</p>
                         <div style={{ display: 'flex', gap: '10px' }}>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-lms' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>github</p>
                                     <svg
@@ -43,7 +43,7 @@ export default function Portfolio() {
                                     </svg>
                                 </span>
                             </a>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-lms' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>see it in action</p>
                                     <svg
@@ -63,7 +63,7 @@ export default function Portfolio() {
                         <h2>Toolify - A All in One Tools Website</h2>
                         <p style={{ margin: '10px 0' }}>Toolify is a webapp built with django that offers a collection of various web development tools and resources.</p>
                         <div style={{ display: 'flex', gap: '10px' }}>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-tools-website' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>github</p>
                                     <svg
@@ -74,7 +74,7 @@ export default function Portfolio() {
                                     </svg>
                                 </span>
                             </a>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-tools-website' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>see it in action</p>
                                     <svg
@@ -94,7 +94,7 @@ export default function Portfolio() {
                         <h2>Django Blog - A Personal Portfolio & Blog</h2>
                         <p style={{ margin: '10px 0' }}>A Personal Blog and portfolio website built using Django and with all the necesarry pages such as Projects, Blog and more.</p>
                         <div style={{ display: 'flex', gap: '10px' }}>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-blog' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>github</p>
                                     <svg
@@ -105,7 +105,7 @@ export default function Portfolio() {
                                     </svg>
                                 </span>
                             </a>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-blog' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>see it in action</p>
                                     <svg
@@ -125,7 +125,7 @@ export default function Portfolio() {
                         <h2>Django Tailwind Blog - A Developer Portfolio & Blog</h2>
                         <p style={{ margin: '10px 0' }}>Django Tailwind Blog is a developer blog and portfolio website built using Django and Tailwind CSS.</p>
                         <div style={{ display: 'flex', gap: '10px' }}>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-tailwind-blog' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>github</p>
                                     <svg
@@ -136,7 +136,7 @@ export default function Portfolio() {
                                     </svg>
                                 </span>
                             </a>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/django-tailwind-blog' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>see it in action</p>
                                     <svg
@@ -156,7 +156,7 @@ export default function Portfolio() {
                         <h2>Blackcode - Web Development Services Agency Website</h2>
                         <p style={{ margin: '10px 0' }}>Web Development Services Agency Landing Page is a professional website showcasing tailored web development services and expertise.</p>
                         <div style={{ display: 'flex', gap: '10px' }}>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/blk-code' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>github</p>
                                     <svg
@@ -167,7 +167,7 @@ export default function Portfolio() {
                                     </svg>
                                 </span>
                             </a>
-                            <a href='' className="hover-effect">
+                            <a href='https://blackcode.vercel.app/' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>see it in action</p>
                                     <svg
@@ -187,7 +187,7 @@ export default function Portfolio() {
                         <h2>Pulse Candy - Candy Selling Website Landing Page</h2>
                         <p style={{ margin: '10px 0' }}>A candy selling landing page including all the popular candies and some info adbotu each candy with the links to buy them online</p>
                         <div style={{ display: 'flex', gap: '10px' }}>
-                            <a href='' className="hover-effect">
+                            <a href='https://github.com/ashish-makes/pulse-candy' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>github</p>
                                     <svg
@@ -198,7 +198,7 @@ export default function Portfolio() {
                                     </svg>
                                 </span>
                             </a>
-                            <a href='' className="hover-effect">
+                            <a href='https://pulse-candy.netlify.app/' target='_blank' className="hover-effect">
                                 <span style={{ display: 'flex', alignItems: 'center' }}>
                                     <p>see it in action</p>
                                     <svg

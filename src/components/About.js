@@ -18,7 +18,7 @@ export default function About() {
         <div className='container about'>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <h1 style={{ fontSize: '60px' }}>about me.</h1>
-                <a style={{ float: 'right', }} href='https://github.com/ashish-makes' target='_blank' className="hover-effect btn">
+                <a style={{ float: 'right', }} href='https://www.linkedin.com/in/ashish-makes/' target='_blank' className="hover-effect btn">
                     <span style={{ display: 'flex', alignItems: 'center' }}>
                         <p style={{ color: '#fff' }}>say hello</p>
                         <svg
