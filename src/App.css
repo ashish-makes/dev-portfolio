@@ -85,8 +85,8 @@ header img {
 }
 
 .hero h1 {
-    font-size: 220px;
-    line-height: 180px;
+    font-size: 200px;
+    line-height: 150px;
 }
 
 .hero img {
@@ -293,6 +293,24 @@ header img {
     padding: 20px 0;
 }
 
+.socials ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.socials ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #FEB244 50%, #ff9c12);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
 @media (max-width: 1100px){
     .container{
 		margin: 0 auto;
@@ -344,6 +362,9 @@ header img {
     }
     .mob-nav-icon {
         display: flex;
+    }
+    .desktop-resume {
+        display: none;
     }
 }
 
