@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import contactImg from '../images/contact.webp';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -95,6 +96,7 @@ export default function Contact() {
         <div className='container contact'>
             <h1 style={{ fontSize: '60px' }}>get in touch.</h1>
             <div className='contact-form'>
+            <img src={contactImg} alt='contact-img' />
                 <form onSubmit={handleSubmit}>
                     <div className='name-container'>
                         <label htmlFor='name'>name</label>
