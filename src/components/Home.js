@@ -4,7 +4,8 @@ import React from 'react'
 export default function Hero() {
     return (
         <>
-            <div className='container hero'>
+        <main>
+        <div className='container hero'>
                 <div>
                     <h1 style={{ color: '#feb244' }}>hello</h1>
                     <h1><i>world</i><span style={{ color: '#feb244' }}>.</span></h1>
@@ -40,6 +41,7 @@ export default function Hero() {
                     <img src={heroImg} alt='hero-img' />
                 </div>
             </div>
+        </main>
             {/* <section className='featured container'>
                 <h1 style={{ fontSize: '60px' }}>featured today.</h1>
                 <div className='featured-content'>
