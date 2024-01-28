@@ -57,7 +57,10 @@ export default function Contact() {
             const emailJSResult = await emailjs.send(
                 'service_ijaiqoh',
                 'template_noj986l',
-                formData,
+                {
+                    ...formData,
+                    from_name: formData.name,
+                },
                 'IjOyQd2RtoujTYM0g'
             );
 
@@ -70,7 +73,7 @@ export default function Contact() {
 
         } catch (error) {
             console.error('Error sending email:', error);
-
+            
             setMessageStatus({
                 type: 'error',
                 text: 'Error sending message. Please try again later.',
@@ -140,9 +143,8 @@ export default function Contact() {
                 </form>
                 {messageStatus.type && (
                     <p
-                        className={`message ${
-                            messageStatus.type === 'success' ? 'success' : 'error'
-                        }`}
+                        className={`message ${messageStatus.type === 'success' ? 'success' : 'error'
+                            }`}
                     >
                         {messageStatus.text}
                     </p>
