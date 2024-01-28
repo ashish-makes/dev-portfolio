@@ -214,6 +214,25 @@ header img {
     border-radius: 50px;
 }
 
+button {
+    background: linear-gradient(to bottom right, #FEB244 50%, #ff9c12);
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    box-shadow: 0 0 50px rgba(254, 178, 68, 0.03);
+}
+
 .btn p:hover {
     color: #fff;
 }
@@ -311,6 +330,27 @@ header img {
     display: flex;
 }
 
+.contact-form {
+    margin: 50px 0;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FEB244;
+    outline: none;
+    border-radius: 6px;
+}
+
 @media (max-width: 1100px){
     .container{
 		margin: 0 auto;
@@ -372,7 +412,7 @@ header img {
     .tech-stack {
         grid-template-columns: repeat(1, 1fr);
     }
-    .about h1, .portfolio h1, .services h1 {
+    .about h1, .portfolio h1, .services h1, .contact h1 {
         font-size: 40px !important;
     }
 }
