@@ -23,6 +23,7 @@ export default function Header() {
                             <li className='link'><Link to='/' onClick={closeMobileMenu}>Home</Link></li>
                             <li className='link'><Link to='/about' onClick={closeMobileMenu}>About</Link></li>
                             <li className='link'><Link to='/portfolio' onClick={closeMobileMenu}>Portfolio</Link></li>
+                            <li className='link'><Link to='/resources' onClick={closeMobileMenu}>Resources</Link></li>
                             <li className='link'><Link to='/services' onClick={closeMobileMenu}>Services</Link></li>
                             <li className='link'><Link to='/contact' onClick={closeMobileMenu}>Contact</Link></li>
                         </ul>
@@ -67,6 +68,7 @@ export default function Header() {
                     <li className='link'><Link to='/' onClick={closeMobileMenu}>Home</Link></li>
                     <li className='link'><Link to='/about' onClick={closeMobileMenu}>About</Link></li>
                     <li className='link'><Link to='/portfolio' onClick={closeMobileMenu}>Portfolio</Link></li>
+                    <li className='link'><Link to='/resources' onClick={closeMobileMenu}>Resources</Link></li>
                     <li className='link'><Link to='/services' onClick={closeMobileMenu}>Services</Link></li>
                     <li className='link'><Link to='/contact' onClick={closeMobileMenu}>Contact</Link></li>
                 </ul>
