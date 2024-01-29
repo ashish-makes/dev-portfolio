@@ -390,10 +390,9 @@ form input, textarea {
 
 .not-found-page {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    min-height: 80vh;
 }
 
 .not-found-page img {
