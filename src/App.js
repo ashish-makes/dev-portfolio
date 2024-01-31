@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Resources from './components/Resources';
 import NotFound from './components/NotFound';
+import { inject } from '@vercel/analytics';
 
 function App() {
   return (
@@ -30,3 +31,4 @@ function App() {
 }
 
 export default App;
+inject();
