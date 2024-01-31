@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Resources from './components/Resources';
 import NotFound from './components/NotFound';
-import { inject } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
           {/* Add the catch-all route for 404 */}
           <Route path='*' element={<NotFound />} />
         </Routes>
+        <Analytics />
       </>
     </Router>
   );
 }
 
 export default App;
-inject();
