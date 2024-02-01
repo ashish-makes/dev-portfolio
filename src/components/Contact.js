@@ -61,6 +61,7 @@ export default function Contact() {
                 {
                     ...formData,
                     from_name: formData.name,
+                    reply_to: formData.email, // Add the sender's email as reply_to
                 },
                 'IjOyQd2RtoujTYM0g'
             );
@@ -71,10 +72,9 @@ export default function Contact() {
                 type: 'success',
                 text: 'Message sent successfully!',
             });
-
         } catch (error) {
             console.error('Error sending email:', error);
-            
+
             setMessageStatus({
                 type: 'error',
                 text: 'Error sending message. Please try again later.',
@@ -96,7 +96,7 @@ export default function Contact() {
         <div className='container contact'>
             <h1 style={{ fontSize: '60px' }}>get in touch.</h1>
             <div className='contact-form'>
-            <img src={contactImg} alt='contact-img' />
+                <img src={contactImg} alt='contact-img' />
                 <form onSubmit={handleSubmit}>
                     <div className='name-container'>
                         <label htmlFor='name'>name</label>
@@ -142,15 +142,15 @@ export default function Contact() {
                             <span>send message</span>
                         </button>
                     </div>
+                    {messageStatus.type && (
+                        <p
+                            className={`message ${messageStatus.type === 'success' ? 'success' : 'error'
+                                }`}
+                        >
+                            {messageStatus.text}
+                        </p>
+                    )}
                 </form>
-                {messageStatus.type && (
-                    <p
-                        className={`message ${messageStatus.type === 'success' ? 'success' : 'error'
-                            }`}
-                    >
-                        {messageStatus.text}
-                    </p>
-                )}
             </div>
         </div>
     );
