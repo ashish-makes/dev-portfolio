@@ -17,7 +17,7 @@ export default function Header() {
         <>
             <header>
                 <nav className='container'>
-                    <Link to='/'><img src={logo} alt='logo' /></Link>
+                    <Link className='logo' to='/'><img src={logo} alt='logo' /></Link>
                     <div>
                         <ul className='nav-links'>
                             <li className='link'><Link to='/' onClick={closeMobileMenu}>Home</Link></li>

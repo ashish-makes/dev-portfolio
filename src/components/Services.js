@@ -3,6 +3,7 @@ import React from 'react'
 import landImg from '../images/landing-page-skeleton.webp';
 import fsImg from '../images/full-stack.webp';
 import othersImg from '../images/other-services.webp';
+import {gsap} from 'gsap';
 
 export default function Services() {
     return (
@@ -24,7 +25,7 @@ export default function Services() {
             </div>
 
             <div className='projects'>
-                <div className='project'>
+                <div className='project' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .5})}}>
                     <img src={landImg} alt='landing-page' />
                     <div style={{ padding: '20px' }}>
                         <h2>Landing Page Development</h2>
@@ -67,7 +68,7 @@ export default function Services() {
                         </a>
                     </div>
                 </div>
-                <div className='project'>
+                <div className='project' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .7})}}>
                     <img src={fsImg} alt='full-stack-app' />
                     <div style={{ padding: '20px' }}>
                         <h2>Full Stack Development</h2>
@@ -110,7 +111,7 @@ export default function Services() {
                         </a>
                     </div>
                 </div>
-                <div className='project'>
+                <div className='project' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .9})}}>
                     <img src={othersImg} alt='other-services' />
                     <div style={{ padding: '20px' }}>
                         <h2>Other Services</h2>

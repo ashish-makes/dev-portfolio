@@ -11,6 +11,9 @@ import mysqlLogo from '../images/mysql.webp';
 import tailwindLogo from '../images/tailwind-css.webp';
 import phpLogo from '../images/php.webp';
 import bootstarpLogo from '../images/bootstrap.webp';
+import {gsap} from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 
 export default function About() {
@@ -43,62 +46,63 @@ export default function About() {
             <h2>my tech stack</h2>
 
             <div className='tech-stack'>
-                <div className='tech'>
+
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .5})}}>
                     <img style={{width: '80px'}} src= {htmlLogo} alt="html" />
                         <p><b>HTML 5</b></p>
                         <p>Advanced</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .6})}}>
                     <img src= {cssLogo} alt="css" />
                         <p><b>CSS 3</b></p>
                         <p>Advanced</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .7})}}>
                     <img src= {jsLogo} alt="javascript" />
                         <p><b>JavaScript</b></p>
                         <p>Intermediate</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .8})}}>
                     <img src= {reactLogo} alt="react" />
                         <p><b>React</b></p>
                         <p>Intermediate</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .5,})}}>
                     <img src= {tailwindLogo} alt="tailwind" />
                         <p><b>Tailwind CSS</b></p>
                         <p>Advanced</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .6})}}>
                     <img src= {bootstarpLogo} alt="bootstrap" />
                         <p><b>Bootstrap</b></p>
                         <p>Advanced</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .7})}}>
                     <img src= {phpLogo} alt="php" />
                         <p><b>PHP</b></p>
                         <p>Intermediate</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .8})}}>
                     <img src= {pythonLogo} alt="python" />
                         <p><b>Python</b></p>
                         <p>Intermediate</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .5})}}>
                     <img src= {djangoLogo} alt="django" />
                         <p><b>Django</b></p>
                         <p>Intermediate</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .6})}}>
                     <img src= {mysqlLogo} alt="mysql" />
                         <p><b>MySQL</b></p>
                         <p>Intermediate</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .7})}}>
                     <img src= {gitLogo} alt="git" />
                         <p><b>Git</b></p>
                         <p>Intermediate</p>
                 </div>
-                <div className='tech'>
+                <div className='tech' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .8})}}>
                     <img src= {githubLogo} alt="github" />
                         <p><b>GitHub</b></p>
                         <p>Intermediate</p>

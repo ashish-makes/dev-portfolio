@@ -4,6 +4,9 @@ import pblogImg from '../images/django-personal-blog-app.webp';
 import djbImg from '../images/django-tailwind-blog.webp';
 import webaImg from '../images/web-design-agency.webp';
 import candywebImg from '../images/candy-landing-page.webp';
+import {gsap} from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Portfolio() {
 
@@ -25,7 +28,7 @@ export default function Portfolio() {
             </div>
 
             <div className='projects'>
-                <div className='project'>
+                <div className='project' ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .5})}}>
                     <img src={lmsImg} alt='django-lms' />
                     <div style={{ padding: '20px' }}>
                         <h2>Skillmate - An eLearning Platform</h2>
@@ -56,7 +59,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className='project'>
+                <div className='project'  ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .6})}}>
                     <img src={toolsImg} alt='django-tools-web' />
                     <div style={{ padding: '20px' }}>
                         <h2>Toolify - A All in One Tools Website</h2>
@@ -87,7 +90,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className='project'>
+                <div className='project'  ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .7})}}>
                     <img src={pblogImg} alt='django-blog' />
                     <div style={{ padding: '20px' }}>
                         <h2>Django Blog - A Personal Portfolio & Blog</h2>
@@ -118,7 +121,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className='project'>
+                <div className='project'  ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: .8})}}>
                     <img src={djbImg} alt='django-tailwind-blog' />
                     <div style={{ padding: '20px' }}>
                         <h2>Django Tailwind Blog - A Developer Portfolio & Blog</h2>
@@ -149,7 +152,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className='project'>
+                <div className='project'  ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: 1})}}>
                     <img src={webaImg} alt='web-dev-agency' />
                     <div style={{ padding: '20px' }}>
                         <h2>Blackcode - Web Development Services Agency Website</h2>
@@ -180,7 +183,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className='project'>
+                <div className='project'  ref={el => {if (el) gsap.fromTo(el, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 0, y: 100}, {scrollTrigger: {trigger: el, start: "top bottom"}, opacity: 1, y: 0, duration: 1.1})}}>
                     <img src={candywebImg} alt='candy-web' />
                     <div style={{ padding: '20px' }}>
                         <h2>Pulse Candy - Candy Selling Website Landing Page</h2>
@@ -215,3 +218,4 @@ export default function Portfolio() {
         </div>
     )
 }
+
